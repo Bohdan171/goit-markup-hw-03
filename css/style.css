@@ -147,6 +147,7 @@ outline: 2px solid;
   color: var(--brand-white);
   min-width: 200px;
 border:1px solid transparent;
+padding: 10px 32px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
