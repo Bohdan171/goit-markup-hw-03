@@ -8,13 +8,45 @@
   --brand-background: #e5e5e5;
   --brand-background-team: #f5f4fa;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
 body {
   color: var(--brand-black);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: #e5e5e5;
 }
+.container { 
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+outline: 2px solid;
 
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -32,6 +64,8 @@ body {
 
 .header {
   background-color: var(--brand-white);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .link-logo {
   text-decoration: none;
@@ -42,7 +76,10 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-
+.header .link-logo {
+  display: inline-block;
+  margin:25px 0 ;
+}
 .text-web {
   color: var(--brand-blue);
 }
@@ -52,13 +89,6 @@ body {
 }
 .link-logo:active {
   color: var(--brand-blue);
-}
-
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
 }
 
 .header-list-nav,
@@ -92,6 +122,8 @@ a {
 /*-------Шапка--------*/
 .hero {
   background-color: var(--brand-fon);
+  text-align: center;
+  margin: 0 auto;
 }
 .hero-title {
   font-weight: 900;
@@ -101,6 +133,7 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--brand-white);
+  margin-bottom: 30px;
 }
 .hero-btn {
   background-color: var(--brand-blue);
@@ -112,6 +145,8 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--brand-white);
+  min-width: 200px;
+border:1px solid transparent;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -143,6 +178,10 @@ a {
   letter-spacing: 0.03em;
   color: var(--brand-grey);
 }
+
+<!--Наша команда-->
+
+
 .team {
   background-color: var(--brand-background-team);
 }
@@ -235,3 +274,11 @@ a {
   letter-spacing: 0.03em;
   color: var(--brand-grey);
 }
+
+
+/* Style */ 
+
+
+* {
+  box-sizing: border-box;
+
