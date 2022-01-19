@@ -39,7 +39,7 @@ body {
   color: var(--brand-black);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  color: #e5e5e5;
+  color: #757575;
 }
 .container {
   width: 1200px;
@@ -89,16 +89,6 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.text-web {
-  color: var(--brand-blue);
-}
-.link-logo:hover,
-.link-logo:focus {
-  color: var(--brand-blue);
-}
-.link-logo:active {
-  color: var(--brand-blue);
-}
 
 .header-list-nav,
 .header-list-adress {
@@ -125,8 +115,15 @@ body {
   padding-bottom: 32px;
   color: var(--brand-black-studio);
 }
+.text-web,
+.link-logo:hover,
+.link-logo:focus,
+.link-logo:active,
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.connection:hover,
+.connection:focus,
+.aclive-page {
   color: var(--brand-blue);
 }
 .header-item-adress + .header-item-adress {
@@ -138,13 +135,6 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--brand-grey);
-}
-.connection:hover,
-.connection:focus {
-  color: var(--brand-blue);
-}
-.aclive-page {
-  color: var(--brand-blue);
 }
 
 /*-------Шапка--------*/
@@ -181,11 +171,12 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--brand-black-studio);
+  color: #188ce8;
 }
 .hero-btn:active {
-  color: var(--brand-black-studio);
+  color: #188ce8;
 }
+
 /*-------Особенности--------*/
 .special {
   display: flex;
@@ -305,6 +296,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--brand-white);
+  margin-bottom: 9px;
 }
 .footer-item {
   font-style: normal;
@@ -327,16 +319,17 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.services-list {
+.button-list {
   display: flex;
   justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  margin-bottom: 42px;
 }
-.services-item + .services-item {
-  margin-left: 30px;
+.button-item + .button-item {
+  margin-left: 8px;
 }
 .services-btn {
   font-family: Roboto;
@@ -369,9 +362,6 @@ body {
 .services-cards-item {
   margin-right: 30px;
   margin-bottom: 30px;
-}
-.services-list {
-  margin-bottom: 42px;
 }
 .services-title {
   font-weight: 700;
