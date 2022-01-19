@@ -44,7 +44,7 @@ width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
-outline: 2px solid;
+outline: 2px solid red;
 
 }
 .visually-hidden {
@@ -66,6 +66,10 @@ outline: 2px solid;
   background-color: var(--brand-white);
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.container-header{
+    display: flex;
+    align-items: center;
 }
 .link-logo {
   text-decoration: none;
@@ -99,16 +103,35 @@ outline: 2px solid;
   letter-spacing: 0.02em;
   color: var(--brand-black);
 }
-
+.header-list-nav{
+    display: flex;
+    margin-left: 93px;
+}
+.header-list-adress{
+    display: flex;
+    margin-left: auto;
+}
+.header-item:not(:last-child){
+    margin-right: 50px;
+}
 .header-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
   color: var(--brand-black-studio);
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--brand-blue);
 }
+.header-item-adress + .header-item-adress{
+    margin-left: 50px;
+}
 .header-link-mail,
 .header-link-tel {
+    display:flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
   color: var(--brand-grey);
 }
 .connection:hover,
@@ -124,6 +147,9 @@ outline: 2px solid;
   background-color: var(--brand-fon);
   text-align: center;
   margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  
 }
 .hero-title {
   font-weight: 900;
@@ -157,6 +183,11 @@ padding: 10px 32px;
   color: var(--brand-black-studio);
 }
 /*-------Особенности--------*/
+.special {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .title {
   font-weight: 700;
   text-align: center;
@@ -165,6 +196,13 @@ padding: 10px 32px;
   letter-spacing: 0.03em;
   color: var(--brand-black);
 }
+.special-list{
+    display: flex;
+    justify-content: space-between;
+}
+.special-item{
+    width: 270px; 
+}
 .special-feature {
   font-weight: 700;
   font-size: 14px;
@@ -172,6 +210,7 @@ padding: 10px 32px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-black);
+  margin-bottom: 10px;
 }
 .special-text {
   font-size: 14px;
@@ -179,12 +218,45 @@ padding: 10px 32px;
   letter-spacing: 0.03em;
   color: var(--brand-grey);
 }
-
-<!--Наша команда-->
-
-
+/*-------Чем мы занимаемся--------*/
+.about-section {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.about-title title {
+margin-bottom: 50px;
+}
+.about-list {
+    display: flex;
+    margin-right: -30px;
+}
+.about-item { 
+    margin-right: 30px;
+}
+/*-------Наша команда--------*/
 .team {
   background-color: var(--brand-background-team);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-title{
+    margin-bottom: 50px;
+}
+.team-list{
+    display: flex;
+    margin-right: -30px;
+}
+.team-item{
+margin-right: 30px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.team-text{
+text-align: center;
+padding-top: 30px;
+padding-bottom: 30px;
+;
 }
 .team-title-people {
   font-weight: 500;
@@ -192,6 +264,7 @@ padding: 10px 32px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 10px;
 }
 .team-class {
   font-size: 16px;
@@ -203,8 +276,13 @@ padding: 10px 32px;
 /*-------footer--------*/
 .footer {
   background-color: var(--brand-fon);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .link-logo {
+  display: inline-block;
+  margin:  0 20px 20px 20px;
+  margin-left: auto;
   color: var(--brand-white);
 }
 .link-logo:hover,
@@ -219,12 +297,14 @@ padding: 10px 32px;
 }
 .footer-item-adress {
   font-size: 14px;
+  font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--brand-white);
 }
 .footer-item {
   font-style: normal;
+  margin-top: 9px;
 }
 
 .footer-link-tel,
@@ -239,19 +319,31 @@ padding: 10px 32px;
 
 /* Портфолио */
 
+.services{
+    padding-top: 94px;
+    padding-bottom: 94px;  
+}
 .services-list {
+  display: flex;
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
+.services-item + .services-item{
+    margin-left: 30px;
+}
 .services-btn {
   font-family: Roboto;
+  font-weight: 500;
   background-color: var(--brand-background-team);
   cursor: pointer;
   color: var(--brand-black);
   border-radius: 4px;
   font-size: inherit;
+  border: 1px solid transparent;
+  padding: 4px 22px;
 }
 .services-btn:hover,
 .services-btn:focus {
@@ -261,12 +353,33 @@ padding: 10px 32px;
 .services-btn:active {
   color: var(--brand-white);
 }
+.services-btn{
+padding: 6px 22px;
+
+}
+.services-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:-30px;
+    margin-bottom: -30px;
+    
+    
+}
+.services-cards-item{
+    margin-right:30px;
+    margin-bottom: 30px;
+    
+}
+.services-list{
+    margin-bottom: 42px;
+}
 .services-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--brand-black);
+  margin-bottom: 4px;
 }
 
 .services-text {
@@ -275,8 +388,15 @@ padding: 10px 32px;
   letter-spacing: 0.03em;
   color: var(--brand-grey);
 }
-
-
+.project-text{
+    border: 1px solid #EEEEEE;
+    padding:20px 24px ;   
+  
+}
+.second-btn {
+  background-color: var(--brand-blue);
+  color: var(--brand-white);
+}
 /* Style */ 
 
 
