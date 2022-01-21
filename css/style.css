@@ -95,10 +95,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--brand-black);
 }
-.header-list-nav {
-  display: flex;
+.header-navigator {
   margin-left: 93px;
 }
+.header-list-nav {
+  display: flex;
+}
+
 .header-list-adress {
   display: flex;
   margin-left: auto;
@@ -299,9 +302,10 @@ body {
 }
 .footer-item {
   font-style: normal;
+}
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .footer-link-tel,
 .footer-link-mail {
   color: rgba(255, 255, 255, 0.6);
