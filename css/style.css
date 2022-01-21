@@ -66,8 +66,6 @@ body {
 
 .header {
   background-color: var(--brand-white);
-  padding-top: 32px;
-  padding-bottom: 32px;
   border-bottom: 1px solid #ececec;
 }
 .container-header {
@@ -85,7 +83,6 @@ body {
 }
 .header .link-logo {
   display: inline-block;
-  margin: 25px 0;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -171,12 +168,11 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  color: #188ce8;
+  background-color: #188ce8;
 }
 .hero-btn:active {
   color: #188ce8;
 }
-
 /*-------Особенности--------*/
 .special {
   display: flex;
@@ -194,9 +190,11 @@ body {
 .special-list {
   display: flex;
   justify-content: space-between;
+  margin-right: -30px;
 }
 .special-item {
   width: 270px;
+  margin-right: 30px;
 }
 .special-feature {
   font-weight: 700;
@@ -216,10 +214,9 @@ body {
 /*-------Чем мы занимаемся--------*/
 .about-section {
   display: flex;
-  padding-top: 94px;
   padding-bottom: 94px;
 }
-.about-title title {
+.about-title {
   margin-bottom: 50px;
 }
 .about-list {
@@ -247,6 +244,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
 }
 .team-text {
   text-align: center;
@@ -275,15 +273,16 @@ body {
   padding-bottom: 60px;
 }
 .footer .link-logo {
-  display: inline-block;
-  margin: 0 20px 20px 20px;
+  display: block;
+  margin-bottom: 0;
   margin-left: auto;
   color: var(--brand-white);
 }
-.link-logo:hover,
-.link-logo:focus {
-  color: var(--brand-blue);
+.footer .link-logo {
+  margin-bottom: 20px;
 }
+.link-logo:hover,
+.link-logo:focus,
 .link-logo:active {
   color: var(--brand-blue);
 }
@@ -300,7 +299,7 @@ body {
 }
 .footer-item {
   font-style: normal;
-  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-link-tel,
@@ -326,10 +325,10 @@ body {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  margin-bottom: 42px;
+  margin-bottom: 50px;
 }
-.button-item + .button-item {
-  margin-left: 8px;
+.button-item:not(:last-child) {
+  margin-right: 8px;
 }
 .services-btn {
   font-family: Roboto;
@@ -381,6 +380,7 @@ body {
 .project-text {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+  border-top: 0;
 }
 .second-btn {
   background-color: var(--brand-blue);
